@@ -17,3 +17,25 @@ import imageMockups from '../assets/images/image-mockups.jpg';
 import imagePlane from '../assets/images/image-plane.jpg';
 import imageRestaurant from '../assets/images/image-restaurant.jpg';
 import logo from '../assets/images/logo.svg';
+
+export default {
+    bgDesktop,
+    bgMobile,
+    iconAPI,
+    iconBudgeting,
+    iconClose,
+    iconFacebook,
+    iconHamburger,
+    iconInstagram,
+    iconOnboarding,
+    iconOnline,
+    iconPinterest,
+    iconTwitter,
+    iconYoutube,
+    imageConfetti,
+    imageCurrency,
+    imageMockups,
+    imagePlane,
+    imageRestaurant,
+    logo,
+}
