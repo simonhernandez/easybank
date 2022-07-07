@@ -1,10 +1,11 @@
 import React from "react";
+import { logo, iconHamburger } from "../../constants/images";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src="" alt="" />
+        <img src={logo} alt="EasyBank Logo" />
       </div>
 
       <ul className="navbar__menu">
@@ -35,7 +36,9 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="navbar__toggle"></button>
+      <button className="navbar__toggle">
+        <img src={iconHamburger} alt="Toggle Menu" />
+      </button>
     </nav>
   );
 };

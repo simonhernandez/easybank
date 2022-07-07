@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Header = () => {
   return (
     <header>
         <div className="wrapper">
-            
+
         </div>
     </header>
   )
