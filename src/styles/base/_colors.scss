@@ -1,0 +1,40 @@
+/*
+    ------------------------
+    ------- Colors ---------
+    ------------------------
+*/
+
+:root{
+    // Primary
+    --color-dark-blue: hsl(233, 26%, 24%);
+    --color-lime-green: hsl(136, 65%, 51%);
+    --color-bright-cyan: hsl(192, 70%, 51%);
+
+    // Neutral
+    --color-grayish-blue: hsl(233, 8%, 62%);
+    --color-grayish-blue-light: hsl(220, 16%, 96%);
+    --color-gray: hsl(231, 8%, 61%);
+    --color-gray-light: hsl(0, 0%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+
+    // Backgrounds
+    --color-bg-navbar: var(--color-white);
+    --color-bg-hero: var(--color-gray-light);
+    --color-bg-section-features: var(--color-grayish-blue);
+    --color-bg-section-article: var(--color-gray-light);
+    --color-bg-footer: var(--color-dark-blue);
+    --color-bg-mobile-menu: linear-gradient(90deg, var(--color-dark-blue), hsla(233, 26%, 24%, .01%));
+
+    // Text
+    --color-text-body: var(--color-gray);
+    --color-text-heading: var(--color-dark-blue);
+    --color-text-link-white: var(--color-white);
+    --color-text-link-white-hover: var(--color-lime-green);
+    --color-text-link-gray: var(--color-gray);
+    --color-text-link-gray-hover: var(--color-dark-blue);
+    --color-text-accent: var(--color-lime-green);
+
+    // Buttons
+    --color-btn-text: var(--color-white);
+    --color-btn-bg: linear-gradient(45deg, var(--color-lime-green), var(--color-bright-cyan));
+}

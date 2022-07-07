@@ -1,0 +1,25 @@
+/*
+    ------------------------
+    ------ Variables -------
+    ------------------------
+*/
+
+:root{
+    // Z Index
+    --z-back: -1;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    
+    // Box Shadow
+    --bxs-mobile-menu: 0 0 50px 0 var(--color-primary-very-light);
+
+    // Header Height
+    --header-height: 3.5556rem;
+    
+    @include breakpoint-up(medium){
+        --header-height: 4.4444rem;
+    }
+}
