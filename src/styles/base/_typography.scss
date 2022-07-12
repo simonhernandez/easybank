@@ -27,7 +27,7 @@
     --fs-sm: .7222rem;
 
     // Line Height
-    --lh-h1: auto;
+    --lh-h1: 1.5556rem;
     --lh-h2: auto;
     --lh-h3: 1.5556rem;
     --lh-h4: 1.1111rem;
@@ -81,7 +81,7 @@ body{
 
 .heading{
     font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-light);
 
     &--1{
         font-size: var(--fs-h1);
