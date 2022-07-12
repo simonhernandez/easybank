@@ -1,0 +1,32 @@
+/*
+    ------------------------
+    -------- Hero ----------
+    ------------------------
+*/
+
+@import '../../styles/app.scss';
+
+.hero{
+    transform: translateY(-80px);
+    &__img-container{
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__bg-img{
+        position: absolute;
+        z-index: var(--z-back);
+    }
+
+    &__text-container{
+        text-align: center;
+
+        .heading {
+            margin-bottom: var(--space-sm);
+        }
+
+        p{
+            margin-bottom: var(--space-lg);
+        }
+    }
+}
