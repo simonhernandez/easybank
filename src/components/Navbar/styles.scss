@@ -44,7 +44,7 @@
             height: calc(100vh - var(--header-height));
             width: 100vw;
             left: 0;
-            z-index: var(--z-back);
+            z-index: var(--z-tooltip);
         }
     }
 }
