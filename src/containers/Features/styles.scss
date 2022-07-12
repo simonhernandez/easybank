@@ -16,6 +16,7 @@
     &__list{
         .heading{
             text-transform: capitalize;
+            margin-bottom: var(--space-sm);
         }
 
         & > *:not(:last-child){
@@ -24,6 +25,7 @@
     }
 
     &__img-container{
+        margin-bottom: var(--space-md);
         img {
             margin: 0 auto;
         }
