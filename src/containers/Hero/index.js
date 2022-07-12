@@ -3,6 +3,8 @@ import React from "react";
 import { bgMobile, bgDesktop, imageMockups } from "../../constants/images";
 import { ReactComponent as Icon } from '../../assets/images/bg-intro-mobile.svg';
 
+import './styles.scss'
+
 const Hero = () => {
   return (
     <section className="section hero">
