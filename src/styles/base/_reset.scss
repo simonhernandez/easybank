@@ -58,3 +58,12 @@ picture {
     scroll-behavior: auto !important;
   }
 }
+
+/* My resets */
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
