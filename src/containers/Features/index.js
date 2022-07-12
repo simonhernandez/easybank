@@ -17,8 +17,8 @@ const Features = ({ features }) => {
         <ul className="features__list" role="list">
           {features.map((feature, index) => {
             return (
-              <li className="feature__item" key={index}>
-                <div className="feature__img-container">
+              <li className="features__item" key={index}>
+                <div className="features__img-container">
                   <img src={feature.image} alt={feature.name} />
                 </div>
                 <h3 className="heading heading--3">{feature.name}</h3>
