@@ -13,12 +13,12 @@ import iconTwitter from '../assets/images/icon-twitter.svg';
 import iconYoutube from '../assets/images/icon-youtube.svg';
 import imageConfetti from '../assets/images/image-confetti.jpg';
 import imageCurrency from '../assets/images/image-currency.jpg';
-import imageMockups from '../assets/images/image-mockups.jpg';
+import imageMockups from '../assets/images/image-mockups.png';
 import imagePlane from '../assets/images/image-plane.jpg';
 import imageRestaurant from '../assets/images/image-restaurant.jpg';
 import logo from '../assets/images/logo.svg';
 
-export default {
+export {
     bgDesktop,
     bgMobile,
     iconAPI,

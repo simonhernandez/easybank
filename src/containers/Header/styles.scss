@@ -1,0 +1,13 @@
+/*
+    ------------------------
+    -------- Header --------
+    ------------------------
+*/
+
+@import '../../styles/app.scss';
+
+.header{
+    background-color: var(--color-bg-header);
+    padding: 0 var(--space-md);
+    height: var(--header-height);
+}

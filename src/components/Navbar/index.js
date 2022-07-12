@@ -1,6 +1,8 @@
 import React from "react";
 import { logo, iconHamburger } from "../../constants/images";
 
+import './styles.scss'
+
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -35,6 +37,8 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+
+      <button className="navbar__ghost-button"></button>
 
       <button className="navbar__toggle">
         <img src={iconHamburger} alt="Toggle Menu" />

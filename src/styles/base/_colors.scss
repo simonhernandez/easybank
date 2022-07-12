@@ -18,12 +18,12 @@
     --color-white: hsl(0, 0%, 100%);
 
     // Backgrounds
-    --color-bg-navbar: var(--color-white);
+    --color-bg-header: var(--color-white);
     --color-bg-hero: var(--color-gray-light);
     --color-bg-section-features: var(--color-grayish-blue);
     --color-bg-section-article: var(--color-gray-light);
     --color-bg-footer: var(--color-dark-blue);
-    --color-bg-mobile-menu: linear-gradient(90deg, var(--color-dark-blue), hsla(233, 26%, 24%, .01%));
+    --color-bg-ghost-button: linear-gradient(90deg, var(--color-dark-blue), hsla(233, 26%, 24%, .01%));
 
     // Text
     --color-text-body: var(--color-gray);
