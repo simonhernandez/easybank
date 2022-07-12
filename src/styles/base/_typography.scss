@@ -5,104 +5,117 @@
 */
 
 // Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
-:root{
-    // Font Family
-    --ff-primary: 'Public Sans', sans-serif;
+:root {
+  // Font Family
+  --ff-primary: "Public Sans", sans-serif;
 
-    // Font Weight
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-bold: 700;
+  // Font Weight
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
 
-    // Font Size
-    --fs-h1: 2.2222rem;
-    --fs-h2: 1.7777rem;
-    --fs-h3: .9rem;
-    --fs-h4: .8889rem;
+  // Font Size
+  --fs-h1: 2.2222rem;
+  --fs-h2: 1.7777rem;
+  --fs-h3: 0.9rem;
+  --fs-h4: 0.8889rem;
 
-    --fs-body: .83333rem;
-    --fs-xs: .5556rem;
-    --fs-sm: .7222rem;
+  --fs-body: 0.83333rem;
+  --fs-xs: 0.5556rem;
+  --fs-sm: 0.7222rem;
+
+  // Line Height
+  --lh-h1: 2.5rem;
+  --lh-h2: auto;
+  --lh-h3: 1.5556rem;
+  --lh-h4: 1.1111rem;
+
+  --lh-body: 1.3889rem;
+  --lh-xs: 1rem;
+  --lh-sm: 1rem;
+
+  // Letter Spacing
+  --ls-h1: -0.03944rem;
+  --ls-h2: -0.03166rem;
+  --ls-h3: -0.02rem;
+  --ls-h4: -0.01611rem;
+
+  --ls-body: -0.012777rem;
+  --ls-sm: -0.00888rem;
+  --ls-xs: -0.01111rem;
+
+  @include breakpoint-up(medium) {
+    --fs-h1: 3.1111rem;
+    --fs-h2: 2.2222rem;
+    --fs-h3: 1.3333rem;
+    --fs-h4: 0.8889rem;
+
+    --fs-body: 1rem;
+    --fs-xs: 0.5556rem;
+    --fs-sm: 0.8889rem;
 
     // Line Height
-    --lh-h1: 2.5rem;
-    --lh-h2: auto;
-    --lh-h3: 1.5556rem;
-    --lh-h4: 1.1111rem;
+    --lh-h1: 3.5556rem;
+    --lh-h2: 3.5556rem;
 
-    --lh-body: 1.3889rem;
-    --lh-xs: 1rem;
-    --lh-sm: 1rem;
+    --lh-body: 1.5556rem;
 
     // Letter Spacing
-    --ls-h1: -.03944rem;
-    --ls-h2: -.03166rem;
-    --ls-h3: -.02rem;
-    --ls-h4: -.01611rem;
+    --ls-h1: -0.05555rem;
+    --ls-h2: -0.03644rem;
+    --ls-h3: -0.02388rem;
 
-    --ls-body: -.012777rem;
-    --ls-sm: -.00888rem;
-    --ls-xs: -.01111rem;
-
-    @include breakpoint-up(medium){
-        --fs-h1: 3.1111rem;
-        --fs-h2: 2.2222rem;
-        --fs-h3: 1.3333rem;
-        --fs-h4: .8889rem;
-
-        --fs-body: 1rem;
-        --fs-xs: .5556rem;
-        --fs-sm: .8889rem;
-
-        // Line Height
-        --lh-h1: 3.5556rem;
-        --lh-h2: 3.5556rem;
-
-        --lh-body: 1.5556rem;
-
-        // Letter Spacing
-        --ls-h1: -.05555rem;
-        --ls-h2: -.03644rem;
-        --ls-h3: -.02388rem;
-
-        --ls-body: -.015556rem;
-    }
+    --ls-body: -0.015556rem;
+  }
 }
 
-body{
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-reg);
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
-    letter-spacing: var(--ls-body);
-    color: var(--color-text-body);
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
+  color: var(--color-text-body);
 }
 
-.heading{
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-light);
-    color: var(--color-text-heading);
+.heading {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-light);
+  color: var(--color-text-heading);
 
-    &--1{
-        font-size: var(--fs-h1);
-        line-height: var(--lh-h1);
-        letter-spacing: var(--ls-h1);
-    }
-    &--2{
-        font-size: var(--fs-h2);
-        line-height: var(--lh-h2);
-        letter-spacing: var(--ls-h2);
-    }
-    &--3{
-        font-size: var(--fs-h3);
-        line-height: var(--lh-h3);
-        letter-spacing: var(--ls-h3);
-    }
-    &--4{
-        font-size: var(--fs-h4);
-        line-height: var(--lh-h4);
-        letter-spacing: var(--ls-h4);
-    }
+  &--1 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    letter-spacing: var(--ls-h1);
+  }
+  &--2 {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    letter-spacing: var(--ls-h2);
+  }
+  &--3 {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+    letter-spacing: var(--ls-h3);
+  }
+  &--4 {
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+    letter-spacing: var(--ls-h4);
+  }
+}
+
+.text {
+  &-sm {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    letter-spacing: var(--ls-sm);
+  }
+  &-xs {
+    font-size: var(--fs-xs);
+    line-height: var(--lh-xs);
+    letter-spacing: var(--ls-xs);
+  }
 }
