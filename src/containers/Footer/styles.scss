@@ -4,7 +4,40 @@
     ------------------------
 */
 
+@import '../../styles/app.scss';
+
 .footer{
     background-color: var(--color-bg-footer);
     padding: var(--space-xl) 0;
+    text-align: center;
+
+    .wrapper{
+        & > *:not(:last-child){
+            margin-bottom: var(--space-lg);
+        }
+    }
+
+    &__logo{
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    &__social-list{
+        @include flex(c, c, row);
+        gap: var(--space-sm);
+    }
+
+    .nav{
+
+        &__list{
+            margin-bottom: var(--space-lg);
+        }
+
+        &__link{
+            text-transform: capitalize;
+            text-decoration: none;
+            color: var(--color-text-link-white);
+        }
+    }
 }

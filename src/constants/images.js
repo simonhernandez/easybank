@@ -17,6 +17,7 @@ import imageMockups from '../assets/images/image-mockups.png';
 import imagePlane from '../assets/images/image-plane.jpg';
 import imageRestaurant from '../assets/images/image-restaurant.jpg';
 import logo from '../assets/images/logo.svg';
+import logoWhite from '../assets/images/logo-white.svg';
 
 export {
     bgDesktop,
@@ -38,4 +39,5 @@ export {
     imagePlane,
     imageRestaurant,
     logo,
+    logoWhite,
 }
