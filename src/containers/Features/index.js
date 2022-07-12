@@ -1,4 +1,5 @@
 import React from "react";
+import { Feature } from "../../components";
 
 import './styles.scss';
 
@@ -17,13 +18,7 @@ const Features = ({ features }) => {
         <ul className="features__list" role="list">
           {features.map((feature, index) => {
             return (
-              <li className="features__item" key={index}>
-                <div className="features__img-container">
-                  <img src={feature.image} alt={feature.name} />
-                </div>
-                <h3 className="heading heading--3">{feature.name}</h3>
-                <p>{feature.description}</p>
-              </li>
+              <Feature feature={feature} key={index}/>
             );
           })}
         </ul>
