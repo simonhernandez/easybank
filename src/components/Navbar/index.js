@@ -10,7 +10,7 @@ const Navbar = () => {
         <img src={logo} alt="EasyBank Logo" />
       </div>
 
-      <ul className="navbar__menu">
+      <ul className="navbar__menu" role="list">
         <li className="navbar__item">
           <a href="#" className="navbar__link">
             Home
