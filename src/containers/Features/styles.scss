@@ -1,0 +1,33 @@
+/*
+    ------------------------
+    ------ Features --------
+    ------------------------
+*/
+
+.features{
+    text-align: center;
+    background: var(--color-bg-section-features);
+    padding: var(--space-4xl) 0;
+
+    &__header{
+        margin-bottom: var(--space-3xl);
+    }
+
+    &__list{
+        .heading{
+            text-transform: capitalize;
+        }
+
+        & > *:not(:last-child){
+            margin-bottom: var(--space-lg);
+        }
+    }
+
+    &__img-container{
+        img {
+            margin: 0 auto;
+        }
+    }
+
+
+}
