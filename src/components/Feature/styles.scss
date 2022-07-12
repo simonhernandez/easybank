@@ -1,0 +1,14 @@
+/*
+    ------------------------
+    ------ Feature ---------
+    ------------------------
+*/
+
+.feature{
+    &__img-container{
+        margin-bottom: var(--space-md);
+        img {
+            margin: 0 auto;
+        }
+    }
+}
