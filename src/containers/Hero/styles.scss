@@ -8,13 +8,14 @@
 
 .hero{
     transform: translateY(-80px);
+    position: relative;
     &__img-container{
-        position: relative;
         overflow: hidden;
     }
 
     &__bg-img{
         position: absolute;
+        left: 0;
         z-index: var(--z-back);
     }
 

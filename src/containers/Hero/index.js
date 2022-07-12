@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <section className="section hero">
       <div className="wrapper">
+        <Icon className="hero__bg-img" />
         <div className="hero__img-container">
-          <Icon className="hero__bg-img" />
           <img src={imageMockups} alt="Phone Mockups" />
         </div>
 
