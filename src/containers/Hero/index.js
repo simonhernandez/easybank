@@ -4,6 +4,7 @@ import { bgMobile, bgDesktop, imageMockups } from "../../constants/images";
 import { ReactComponent as Icon } from "../../assets/images/bg-intro-mobile.svg";
 
 import "./styles.scss";
+import { CTA } from "../../components";
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
-          <button className="btn btn--cta">Request Invite</button>
+          <CTA />
         </div>
       </div>
     </section>

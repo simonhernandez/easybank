@@ -5,7 +5,9 @@
 */
 
 .cta{
-    background-color: var(--color-btn-bg);
+    background-image: var(--color-btn-bg);
     color: var(--color-btn-text);
-    padding: var(--space-lg) var(--space-xs);
+    padding: var(--space-xs) var(--space-lg);
+    border-radius: 22px;
+    line-height: 28px;
 }
