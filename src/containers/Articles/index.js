@@ -1,9 +1,11 @@
 import React from 'react'
 import { Article } from '../../components'
 
+import './styles.scss';
+
 const Articles = ({ articles }) => {
   return (
-    <section>
+    <section className='articles'>
         <div className="articles__header">
             <h2 className="heading heading--2">Articles</h2>
         </div>

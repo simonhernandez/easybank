@@ -1,0 +1,18 @@
+/*
+    ------------------------
+    ------ Articles --------
+    ------------------------
+*/
+
+.articles{
+    background-color: var(--color-bg-section-article);
+    padding: var(--space-5xl) 0;
+
+    & > *:not(:last-child){
+        margin-bottom: var(--space-md);
+    }
+
+    &__header{
+        text-align: center;
+    }
+}
