@@ -41,7 +41,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <button className="navbar__ghost-button"></button>
+          <button className="navbar__ghost-button" onClick={() => setToggleMenu(!toggleMenu)}></button>
         </>
       )}
 
