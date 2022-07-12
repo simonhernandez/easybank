@@ -10,4 +10,6 @@
     background-color: var(--color-bg-header);
     padding: 0 var(--space-md);
     height: var(--header-height);
+    position: relative;
+    z-index: var(--z-modal);
 }
