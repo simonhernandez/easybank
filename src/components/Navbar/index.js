@@ -6,12 +6,15 @@ import "./styles.scss";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
     if (window.innerWidth >= 1024) {
       setToggleMenu(true)
+      setIsMobile(false)
     } else {
       setToggleMenu(false)
+      setIsMobile(true)
     }
   };
 
@@ -66,7 +69,9 @@ const Navbar = () => {
         <img src={iconHamburger} alt="Toggle Menu" />
       </button>
 
-      <CTA />
+      {!isMobile && (
+        <CTA />
+      )}
     </nav>
   );
 };
