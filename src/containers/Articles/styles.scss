@@ -4,6 +4,8 @@
     ------------------------
 */
 
+@import '../../styles/app.scss';
+
 .articles{
     background-color: var(--color-bg-section-article);
     padding: var(--space-5xl) 0;
@@ -19,5 +21,14 @@
         }
     }
 
-    
+    // Desktop
+    @include breakpoint-up(large){
+        &__list{
+            @include flex(sb, c, row);
+
+            & > *:not(:last-child){
+                margin-bottom: initial;
+            }
+        }
+    }
 }

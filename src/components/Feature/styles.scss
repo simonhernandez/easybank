@@ -4,11 +4,38 @@
     ------------------------
 */
 
+@import '../../styles/app.scss';
+
 .feature{
     &__img-container{
         margin-bottom: var(--space-md);
         img {
             margin: 0 auto;
+        }
+    }
+
+    &__item{
+        .heading{
+            text-transform: capitalize;
+            margin-bottom: var(--space-sm);
+        }
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+        &__img-container{
+            margin-bottom: var(--space-xl);
+            img {
+                margin: initial;
+            }
+        }
+
+        &__item{
+            max-width: 255px;
+
+            .heading{
+                margin-bottom: 26px;
+            }
         }
     }
 }
