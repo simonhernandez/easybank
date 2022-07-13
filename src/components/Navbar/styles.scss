@@ -27,16 +27,6 @@
             }
         }
 
-        &__item{
-            text-align: center;
-            color: white;
-        }
-
-        &__link{
-            color: var(--color-text-link-dark);
-            text-decoration: none;
-        }
-
         &__ghost-button{
             background: var(--color-bg-ghost-button);
             position: fixed;
@@ -45,6 +35,32 @@
             width: 100vw;
             left: 0;
             z-index: var(--z-tooltip);
+        }
+    }
+
+    &__item{
+        text-align: center;
+        color: white;
+    }
+
+    &__link{
+        color: var(--color-text-link-gray);
+        text-decoration: none;
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+        &__toggle{
+            display: none;
+        }
+
+        &__menu{
+            @include flex(sb, c, row);
+            gap: 30px;
+        }
+
+        &__ghost-button{
+            display: none;
         }
     }
 }
