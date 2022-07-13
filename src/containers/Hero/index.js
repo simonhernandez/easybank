@@ -1,16 +1,37 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 import { bgMobile, bgDesktop, imageMockups } from "../../constants/images";
-import { ReactComponent as Icon } from "../../assets/images/bg-intro-mobile.svg";
+import { ReactComponent as BgMobile } from "../../assets/images/bg-intro-mobile.svg";
+import { ReactComponent as BgDesktop } from "../../assets/images/bg-intro-desktop.svg";
 
 import "./styles.scss";
 import { CTA } from "../../components";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(true);
+
+  const handleResize = () => {
+    if (window.innerWidth >= 1024) {
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+    }
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="section hero">
       <div className="wrapper">
-        <Icon className="hero__bg-img" />
+        {isMobile ? (
+          <BgMobile className="hero__bg-img" />
+        ) : (
+          <BgDesktop className="hero__bg-img" />
+        )}
         <div className="hero__img-container">
           <img src={imageMockups} alt="Phone Mockups" />
         </div>

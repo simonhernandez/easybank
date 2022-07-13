@@ -15,7 +15,7 @@
 
     &__bg-img{
         position: absolute;
-        left: 0;
+        right: 0;
         width: 100%;
         z-index: var(--z-back);
     }
@@ -29,6 +29,33 @@
 
         p{
             margin-bottom: var(--space-lg);
+        }
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+
+        @include flex(sb, c, row);
+        transform: initial;
+        padding: 170px 0;
+
+        &__text-container{
+            max-width: 447px;
+            text-align: initial;
+        }
+
+        &__img-container{
+            order: 2;
+            right: -15px;
+            top: -125px;
+            max-width: 728.57px;
+            position: absolute;
+        }
+
+        &__bg-img{
+            width: initial;
+            top: -80px;
+            right: 0;
         }
     }
 }
