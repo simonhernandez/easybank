@@ -10,9 +10,9 @@ const Article = ({ article }) => {
           <img src={article.image} alt={article.title} />
         </div>
         <div className="article__text-container">
-          <small className="text-xs">By {article.author}</small>
+          <small className="text-xxs">By {article.author}</small>
           <h4 className="heading heading--4">{article.title}</h4>
-          <p className="text-sm">{article.excerpt}</p>
+          <p className="text-xs">{article.excerpt}</p>
         </div>
       </a>
     </article>

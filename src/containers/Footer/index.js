@@ -47,7 +47,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <nav className="nav">
+        <nav className="nav text-sm">
           <ul className="nav__list nav__list--left" role="list">
             <li className="nav__item">
               <a className="nav__link" href="#">about us</a>
@@ -75,7 +75,7 @@ const Footer = () => {
         <CTA className="footer__cta"/>
 
         <div className="footer__copyright">
-            <p>&copy; Easybank. All Rights Reserved</p>
+            <p className="text-sm">&copy; Easybank. All Rights Reserved</p>
         </div>
       </div>
     </footer>
