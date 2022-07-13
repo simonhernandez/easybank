@@ -22,9 +22,10 @@
   --fs-h3: 0.9rem;
   --fs-h4: 0.8889rem;
 
-  --fs-body: 0.83333rem;
-  --fs-xs: 0.5556rem;
-  --fs-sm: 0.7222rem;
+  --fs-body:.83333rem;
+  --fs-xxs: .5556rem;
+  --fs-xs:  .7222rem;
+  --fs-sm:  .83333rem;
   --fs-btn: .77778rem;
 
   // Line Height
@@ -34,8 +35,9 @@
   --lh-h4: 1.1111rem;
 
   --lh-body: 1.3889rem;
+  --lh-xxs: 1rem;
   --lh-xs: 1rem;
-  --lh-sm: 1rem;
+  --lh-sm: 1.4444rem;
   --lh-btn: 1.5556rem;
 
   // Letter Spacing
@@ -45,8 +47,9 @@
   --ls-h4: -0.01611rem;
 
   --ls-body: -0.012777rem;
-  --ls-sm: -0.00888rem;
-  --ls-xs: -0.01111rem;
+  --ls-xs: -0.00888rem;
+  --ls-xxs: -0.01111rem;
+  --ls-sm: -0.012777rem;
 
   @include breakpoint-up(medium) {
     --fs-h1: 3.1111rem;
@@ -117,6 +120,11 @@ body {
     font-size: var(--fs-xs);
     line-height: var(--lh-xs);
     letter-spacing: var(--ls-xs);
+  }
+  &-xxs {
+    font-size: var(--fs-xxs);
+    line-height: var(--lh-xxs);
+    letter-spacing: var(--ls-xxs);
   }
 }
 
