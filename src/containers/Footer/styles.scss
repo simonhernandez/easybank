@@ -4,40 +4,95 @@
     ------------------------
 */
 
-@import '../../styles/app.scss';
+@import "../../styles/app.scss";
 
-.footer{
-    background-color: var(--color-bg-footer);
-    padding: var(--space-xl) 0;
-    text-align: center;
+.footer {
+  background-color: var(--color-bg-footer);
+  padding: var(--space-xl) 0;
+  text-align: center;
 
-    .wrapper{
-        & > *:not(:last-child){
-            margin-bottom: var(--space-lg);
-        }
+  .wrapper {
+    & > *:not(:last-child) {
+      margin-bottom: var(--space-lg);
+    }
+  }
+
+  &__logo {
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__social-list {
+    @include flex(c, c, row);
+    gap: var(--space-sm);
+  }
+
+  .nav {
+    &__list {
+      margin-bottom: var(--space-lg);
     }
 
-    &__logo{
-        img{
-            margin: 0 auto;
-        }
+    &__link {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: var(--color-text-link-white);
+    }
+  }
+
+  @include breakpoint-up(large) {
+    text-align: initial;
+    padding: var(--space-2xl) 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "logo   nav nav button"
+      "social nav nav copy";
+    row-gap: var(--space-md);
+
+    .wrapper {
+      & > *:not(:last-child) {
+        margin-bottom: initial;
+      }
     }
 
-    &__social-list{
-        @include flex(c, c, row);
-        gap: var(--space-sm);
+    &__logo {
+      grid-area: logo;
+
+      img {
+        margin: initial;
+      }
     }
 
-    .nav{
-
-        &__list{
-            margin-bottom: var(--space-lg);
-        }
-
-        &__link{
-            text-transform: capitalize;
-            text-decoration: none;
-            color: var(--color-text-link-white);
-        }
+    &__social-list {
+      grid-area: social;
+      justify-content: flex-start;
     }
+
+    &__cta {
+      grid-area: button;
+      justify-self: end;
+      align-self: center;
+    }
+
+    &__copyright {
+      grid-area: copy;
+    }
+
+    .nav {
+      grid-area: nav;
+      @include flex(fs, c, row);
+      gap: 128px;
+      &__list {
+        margin-bottom: initial;
+        &--1 {
+          grid-area: list-1;
+        }
+        &--2 {
+          grid-area: list-2;
+        }
+      }
+    }
+  }
 }

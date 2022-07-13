@@ -48,7 +48,7 @@ const Footer = () => {
         </ul>
 
         <nav className="nav">
-          <ul className="nav__list" role="list">
+          <ul className="nav__list nav__list--left" role="list">
             <li className="nav__item">
               <a className="nav__link" href="#">about us</a>
             </li>
@@ -58,6 +58,8 @@ const Footer = () => {
             <li className="nav__item">
               <a className="nav__link" href="#">blog</a>
             </li>
+          </ul>
+          <ul className="nav__list nav__list--right" role="list">
             <li className="nav__item">
               <a className="nav__link" href="#">careers</a>
             </li>
@@ -68,9 +70,9 @@ const Footer = () => {
               <a className="nav__link" href="#">privacy policy</a>
             </li>
           </ul>
-
-          <CTA />
         </nav>
+
+        <CTA className="footer__cta"/>
 
         <div className="footer__copyright">
             <p>&copy; Easybank. All Rights Reserved</p>
