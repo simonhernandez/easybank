@@ -23,6 +23,11 @@
 
     // Desktop
     @include breakpoint-up(large){
+
+        &__header{
+            text-align: initial
+        }
+
         &__list{
             @include flex(sb, c, row);
 

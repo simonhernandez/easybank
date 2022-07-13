@@ -7,7 +7,7 @@ const Articles = ({ articles }) => {
   return (
     <section className="articles">
       <div className="articles__header">
-        <h2 className="heading heading--2">Articles</h2>
+        <h2 className="heading heading--2">Lastest Articles</h2>
       </div>
 
       <ul className="articles__list">
