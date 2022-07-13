@@ -49,9 +49,9 @@
     grid-template-areas:
       "logo   nav nav button"
       "social nav nav copy";
-    row-gap: var(--space-md);
 
     .wrapper {
+      row-gap: var(--space-md);
       & > *:not(:last-child) {
         margin-bottom: initial;
       }
@@ -70,7 +70,7 @@
       justify-content: flex-start;
     }
 
-    &__cta {
+    .cta {
       grid-area: button;
       justify-self: end;
       align-self: center;
@@ -91,6 +91,10 @@
         }
         &--2 {
           grid-area: list-2;
+        }
+
+        & > *:not(:last-child){
+            margin-bottom: var(--space-xs);
         }
       }
     }
