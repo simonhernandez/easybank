@@ -25,6 +25,7 @@
   --fs-body: 0.83333rem;
   --fs-xs: 0.5556rem;
   --fs-sm: 0.7222rem;
+  --fs-btn: .77778rem;
 
   // Line Height
   --lh-h1: 2.5rem;
@@ -35,6 +36,7 @@
   --lh-body: 1.3889rem;
   --lh-xs: 1rem;
   --lh-sm: 1rem;
+  --lh-btn: 1.5556rem;
 
   // Letter Spacing
   --ls-h1: -0.03944rem;
@@ -116,4 +118,9 @@ body {
     line-height: var(--lh-xs);
     letter-spacing: var(--ls-xs);
   }
+}
+
+.cta{
+  font-size: var(--fs-btn);
+  line-height: var(--lh-btn);
 }
