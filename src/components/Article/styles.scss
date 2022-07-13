@@ -4,6 +4,8 @@
     ------------------------
 */
 
+@import '../../styles/app.scss';
+
 .article{
     a{
         text-decoration: none;
@@ -23,6 +25,20 @@
 
         & > *:not(:last-child){
             margin-bottom: var(--space-xs);
+        }
+    }
+
+    @include breakpoint-up(large){
+        max-width: 255px;
+
+        &__img-container{
+            img{
+                height: 200px;
+            }
+        }
+
+        &__text-container{
+            padding: var(--space-md);
         }
     }
 }
