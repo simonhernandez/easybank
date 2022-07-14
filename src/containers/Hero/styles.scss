@@ -8,7 +8,6 @@
 
 .hero{
     transform: translateY(-80px);
-    background-color: var(--color-bg-hero);
     position: relative;
     &__img-container{
         overflow: hidden;
@@ -51,6 +50,7 @@
             top: -125px;
             max-width: 728.57px;
             position: absolute;
+            z-index: var(--z-tooltip);
         }
 
         &__bg-img{
