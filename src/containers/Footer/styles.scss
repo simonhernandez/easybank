@@ -37,6 +37,10 @@
       text-transform: capitalize;
       text-decoration: none;
       color: var(--color-text-link-white);
+
+      &:hover{
+        color: var(--color-text-link-white-hover);
+      }
     }
   }
 

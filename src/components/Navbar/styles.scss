@@ -46,6 +46,11 @@
     &__link{
         color: var(--color-text-link-gray);
         text-decoration: none;
+
+        &:hover{
+            color: var(--color-text-link-gray-hover);
+            border-bottom: 3px solid var(--color-lime-green);
+        }
     }
 
     // Desktop
