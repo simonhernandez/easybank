@@ -12,6 +12,8 @@
     padding: var(--space-4xl) 0;
 
     &__header{
+        max-width: 447px;
+        margin: 0 auto;
         margin-bottom: var(--space-3xl);
         .heading{
             margin-bottom: var(--space-sm);
@@ -24,6 +26,11 @@
         }
     }
 
+    &__item{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
     // Desktop
     @include breakpoint-up(large){
         padding: 96px 0;
@@ -31,6 +38,7 @@
 
         &__header{
             max-width: 635px;
+            margin: initial;
             margin-bottom: 72px;
         }
 
@@ -40,6 +48,11 @@
             & > *:not(:last-child){
                 margin-bottom: initial;
             }
+        }
+
+        &__item{
+            max-width: initial;
+            margin: initial;
         }
     }
 

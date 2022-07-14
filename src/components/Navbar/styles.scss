@@ -11,7 +11,7 @@
     height: inherit;
     @include flex(sb, c, row);
 
-    @include breakpoint-down(small){
+    @include breakpoint-down(medium){
         &__menu{
             position: absolute;
             top: calc(var(--header-height) + var(--space-base));

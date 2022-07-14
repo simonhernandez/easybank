@@ -9,10 +9,6 @@
 .hero{
     transform: translateY(-80px);
     position: relative;
-    // overflow-y: auto;
-    &__img-container{
-        // overflow: hidden;
-    }
 
     &__bg-img{
         position: absolute;
@@ -23,6 +19,8 @@
 
     &__text-container{
         text-align: center;
+        max-width: 447px;
+        margin: 0 auto;
 
         .heading {
             margin-bottom: var(--space-sm);
@@ -41,8 +39,8 @@
         padding: 170px 0;
 
         &__text-container{
-            max-width: 447px;
             text-align: initial;
+            margin: initial;
         }
 
         &__img-container{

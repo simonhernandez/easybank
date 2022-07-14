@@ -35,6 +35,13 @@
         & > *:not(:last-child){
             margin-bottom: var(--space-xs);
         }
+
+        p{
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
     }
 
     @include breakpoint-up(large){
