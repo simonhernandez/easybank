@@ -12,6 +12,20 @@
     border-radius: 5px;
     overflow: hidden;
     background-color: var(--color-white);
+
+    &__img-container{
+        overflow: hidden;
+
+        img{
+            transition: all ease .2s;
+        }
+    }
+
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
     
     &__text-container{
         padding: var(--space-md) 31px;
