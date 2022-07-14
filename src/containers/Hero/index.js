@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { bgMobile, bgDesktop, imageMockups } from "../../constants/images";
 import { ReactComponent as BgMobile } from "../../assets/images/bg-intro-mobile.svg";
 import { ReactComponent as BgDesktop } from "../../assets/images/bg-intro-desktop.svg";
-
+import { ANIMATION_DURATION } from '../../constants/animationParams';
 import "./styles.scss";
 import { CTA } from "../../components";
 
@@ -35,7 +35,7 @@ const Hero = () => {
         <div
           className="hero__img-container"
           data-aos="fade-down"
-          data-aos-duration="1200"
+          data-aos-duration={`${ANIMATION_DURATION}`}
         >
           <img src={imageMockups} alt="Phone Mockups" />
         </div>
@@ -43,7 +43,7 @@ const Hero = () => {
         <div
           className="hero__text-container"
           data-aos="fade-up"
-          data-aos-duration="1200"
+          data-aos-duration={`${ANIMATION_DURATION}`}
         >
           <h1 className="heading heading--1">
             Next generation digital banking

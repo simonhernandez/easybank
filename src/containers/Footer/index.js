@@ -8,13 +8,18 @@ import {
   iconPinterest,
   iconInstagram,
 } from "../../constants/images";
+import { ANIMATION_DURATION } from '../../constants/animationParams';
 
 import "./styles.scss";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="wrapper" data-aos="fade" data-aos-duration="1200">
+      <div
+        className="wrapper"
+        data-aos="fade"
+        data-aos-duration={`${ANIMATION_DURATION}`}
+      >
         <div className="footer__logo">
           <a href="#">
             <img src={logoWhite} alt="logo" />

@@ -1,5 +1,6 @@
 import React from "react";
 import { Article } from "../../components";
+import { ANIMATION_DURATION, ANIMATION_DELAY } from '../../constants/animationParams';
 
 import "./styles.scss";
 
@@ -10,7 +11,7 @@ const Articles = ({ articles }) => {
         <div
           className="articles__header"
           data-aos="fade"
-          data-aos-duration="1200"
+          data-aos-duration={`${ANIMATION_DURATION}`}
         >
           <h2 className="heading heading--2">Lastest Articles</h2>
         </div>
@@ -22,8 +23,8 @@ const Articles = ({ articles }) => {
                 className="articles__item"
                 key={index}
                 data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay={`${index * 200}`}
+                data-aos-duration={`${ANIMATION_DURATION}`}
+                data-aos-delay={`${index * ANIMATION_DELAY}`}
               >
                 <Article article={article} />
               </li>

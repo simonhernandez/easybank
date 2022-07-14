@@ -1,5 +1,6 @@
 import React from "react";
 import { Feature } from "../../components";
+import { ANIMATION_DURATION, ANIMATION_DELAY } from '../../constants/animationParams';
 
 import "./styles.scss";
 
@@ -10,7 +11,7 @@ const Features = ({ features }) => {
         <header
           className="features__header"
           data-aos="fade"
-          data-aos-duration="1200"
+          data-aos-duration={`${ANIMATION_DURATION}`}
         >
           <h1 className="heading heading--2">Why choose Easybank?</h1>
           <p>
@@ -26,8 +27,8 @@ const Features = ({ features }) => {
                 className="features__item"
                 key={index}
                 data-aos="fade"
-                data-aos-duration="1200"
-                data-aos-delay={`${index * 200}`}
+                data-aos-duration={`${ANIMATION_DURATION}`}
+                data-aos-delay={`${index * ANIMATION_DELAY}`}
               >
                 <Feature feature={feature} />
               </li>
