@@ -1,0 +1,2 @@
+export const ANIMATION_DURATION = 1200
+export const ANIMATION_DELAY = 200
