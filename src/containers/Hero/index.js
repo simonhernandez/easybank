@@ -32,11 +32,19 @@ const Hero = () => {
         ) : (
           <BgDesktop className="hero__bg-img" />
         )}
-        <div className="hero__img-container">
+        <div
+          className="hero__img-container"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+        >
           <img src={imageMockups} alt="Phone Mockups" />
         </div>
 
-        <div className="hero__text-container">
+        <div
+          className="hero__text-container"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           <h1 className="heading heading--1">
             Next generation digital banking
           </h1>
