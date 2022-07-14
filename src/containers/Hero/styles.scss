@@ -9,8 +9,9 @@
 .hero{
     transform: translateY(-80px);
     position: relative;
+    // overflow-y: auto;
     &__img-container{
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     &__bg-img{
@@ -46,11 +47,16 @@
 
         &__img-container{
             order: 2;
-            right: -125px;
+            right: 0;
             top: -125px;
             max-width: 728.57px;
             position: absolute;
             z-index: var(--z-tooltip);
+            overflow-x: hidden;
+
+            img{
+                transform: translateX(125px);
+            }
         }
 
         &__bg-img{
