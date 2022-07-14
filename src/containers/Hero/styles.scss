@@ -8,6 +8,7 @@
 
 .hero{
     transform: translateY(-80px);
+    background-color: var(--color-bg-hero);
     position: relative;
     &__img-container{
         overflow: hidden;
