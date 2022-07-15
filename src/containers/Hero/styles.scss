@@ -17,6 +17,12 @@
         z-index: var(--z-back);
     }
 
+    &__img-container{
+        img{
+            margin: 0 auto;
+        }
+    }
+
     &__text-container{
         text-align: center;
         max-width: 447px;
@@ -56,6 +62,7 @@
             right: 0;
             top: -125px;
             max-width: 728.57px;
+            max-width: 680px;
             position: absolute;
             z-index: var(--z-tooltip);
             overflow-x: hidden;
@@ -66,9 +73,19 @@
         }
 
         &__bg-img{
-            width: initial;
+            width: 60%;
             top: -80px;
             right: 0;
+        }
+    }
+
+    @include breakpoint-up(xlarge){
+        &__img-container{
+            max-width: 728.57px;
+        }
+
+        &__bg-img{
+            width: initial;
         }
     }
 }
