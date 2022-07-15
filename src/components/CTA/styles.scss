@@ -11,8 +11,13 @@
     border-radius: 22px;
     line-height: 28px;
     max-width: 163px;
+    transition: opacity ease .3s;
 
     &:hover{
         opacity: .7;
+    }
+    
+    &:focus{
+        outline: 3px dashed var(--color-bright-cyan);
     }
 }

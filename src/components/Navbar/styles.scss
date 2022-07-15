@@ -47,7 +47,8 @@
         color: var(--color-text-link-gray);
         text-decoration: none;
 
-        &:hover{
+        &:hover,
+        &:focus{
             color: var(--color-text-link-gray-hover);
             border-bottom: 3px solid var(--color-lime-green);
         }

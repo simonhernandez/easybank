@@ -38,7 +38,8 @@
       text-decoration: none;
       color: var(--color-text-link-white);
 
-      &:hover{
+      &:hover,
+      &:focus{
         color: var(--color-text-link-white-hover);
       }
     }
