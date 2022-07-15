@@ -41,6 +41,14 @@
         &__text-container{
             text-align: initial;
             margin: initial;
+
+            .heading{
+                margin-bottom: var(--space-md);
+            }
+
+            p{
+                margin-bottom: 2rem;
+            }
         }
 
         &__img-container{
