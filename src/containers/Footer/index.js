@@ -26,7 +26,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <ul className="footer__social-list" role="list">
+        <ul className="footer__social-list">
           <li className="footer__social-item">
             <a href="#">
               <img src={iconFacebook} alt="Facebook" />
@@ -55,7 +55,7 @@ const Footer = () => {
         </ul>
 
         <nav className="nav text-sm">
-          <ul className="nav__list nav__list--left" role="list">
+          <ul className="nav__list nav__list--left">
             <li className="nav__item">
               <a className="nav__link" href="#">
                 about us
@@ -72,7 +72,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <ul className="nav__list nav__list--right" role="list">
+          <ul className="nav__list nav__list--right">
             <li className="nav__item">
               <a className="nav__link" href="#">
                 careers

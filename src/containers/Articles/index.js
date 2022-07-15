@@ -16,7 +16,7 @@ const Articles = ({ articles }) => {
           <h2 className="heading heading--2">Lastest Articles</h2>
         </div>
 
-        <ul className="articles__list" role="list">
+        <ul className="articles__list">
           {articles.map((article, index) => {
             return (
               <li

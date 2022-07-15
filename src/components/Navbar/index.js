@@ -31,7 +31,7 @@ const Navbar = () => {
 
       {toggleMenu && (
         <>
-          <ul className="navbar__menu" role="list">
+          <ul className="navbar__menu">
             <li className="navbar__item">
               <a href="#" className="navbar__link">
                 Home

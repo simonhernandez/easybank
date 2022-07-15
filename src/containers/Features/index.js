@@ -20,7 +20,7 @@ const Features = ({ features }) => {
           </p>
         </header>
 
-        <ul className="features__list" role="list">
+        <ul className="features__list">
           {features.map((feature, index) => {
             return (
               <li
